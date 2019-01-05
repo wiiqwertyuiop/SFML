@@ -4,17 +4,19 @@
 
 /*
 
-TODO:
--  Word wrap
--  Up/Down arrows
--  Done
+ - TODO -
 
- Done:
-- Insert text at cursor
-- Deleting works; including cursor position
-- Left/Right arrows
+Word wrap:
 
- */
+If we delete a line:
+	loop to see if any characers are off screen
+
+If a character is off screen loop back until you find a space or a new line character
+
+	If you find a space insert a new line
+	If you find a newline character end search and just break up the word to make it fit
+
+*/
 
 int main() {
 
